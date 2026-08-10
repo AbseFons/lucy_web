@@ -60,3 +60,40 @@ Cada registro permite definir fecha, título, texto, mensaje y en el futuro una 
 11. Carta
 12. Final especial del 14 de agosto
 13. Easter egg
+
+
+## v0.3 — Galería de recuerdos
+
+Se añadió:
+
+- Galería editorial responsive.
+- Filtros: Todas, Favoritas, Citas, Nosotros, Lugares y Detalles.
+- Tarjetas de distintos tamaños para evitar una cuadrícula monótona.
+- Lightbox de pantalla completa.
+- Navegación con flechas del teclado.
+- Cierre con `Escape`.
+- Navegación anterior/siguiente.
+- Soporte para fecha, lugar y nota manuscrita por fotografía.
+- Placeholders que no inventan recuerdos.
+- Carpeta `public/memories/` lista para agregar imágenes reales.
+
+### Cómo agregar una foto
+
+1. Copia la foto a:
+
+```text
+public/memories/
+```
+
+2. Abre `src/data/gallery.ts`.
+
+3. En el recuerdo correspondiente agrega:
+
+```ts
+src: '/memories/nombre-de-la-foto.jpg',
+alt: 'Descripción breve de la fotografía',
+date: '14 de junio de 2026',
+location: 'Lima',
+```
+
+No es obligatorio completar fecha o lugar.

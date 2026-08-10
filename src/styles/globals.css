@@ -616,3 +616,267 @@ button {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* Nuestros 14 */
+
+.section--fourteens {
+  min-height: auto;
+  color: var(--text-dark);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(193, 18, 31, 0.07), transparent 27%),
+    radial-gradient(circle at 0% 80%, rgba(102, 155, 188, 0.1), transparent 30%),
+    var(--cream-light);
+}
+
+.fourteens__heading {
+  display: grid;
+  gap: 26px;
+  align-items: end;
+}
+
+.fourteens__intro {
+  max-width: 560px;
+  margin: 0;
+  color: rgba(23, 32, 39, 0.62);
+  line-height: 1.8;
+}
+
+.fourteens__rail {
+  position: relative;
+  display: none;
+  height: 2px;
+  margin: 58px 0 24px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: rgba(0, 48, 73, 0.09);
+}
+
+.fourteens__rail-fill {
+  position: absolute;
+  inset: 0;
+  transform-origin: left;
+  background: linear-gradient(90deg, var(--blue), var(--wine), var(--red));
+}
+
+.fourteens__grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 46px;
+}
+
+.fourteen-card {
+  position: relative;
+  overflow: hidden;
+  padding: 26px 22px 22px;
+  border: 1px solid rgba(0, 48, 73, 0.09);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 20px 60px rgba(0, 48, 73, 0.075);
+}
+
+.fourteen-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--blue);
+}
+
+.fourteen-card--featured {
+  border-color: rgba(193, 18, 31, 0.18);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(193, 18, 31, 0.1), transparent 34%),
+    rgba(255, 255, 255, 0.7);
+}
+
+.fourteen-card--featured::before {
+  background: var(--red);
+}
+
+.fourteen-card--locked {
+  filter: saturate(0.75);
+}
+
+.fourteen-card__number {
+  position: absolute;
+  top: 8px;
+  right: 17px;
+  color: rgba(0, 48, 73, 0.04);
+  font-family: 'Playfair Display', serif;
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.fourteen-card--featured .fourteen-card__number {
+  color: rgba(193, 18, 31, 0.055);
+}
+
+.fourteen-card__topline {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  color: var(--wine);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.fourteen-card h3 {
+  position: relative;
+  z-index: 1;
+  max-width: 460px;
+  margin: 34px 0 10px;
+  color: var(--navy);
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 8vw, 3rem);
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.fourteen-card__short {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+  margin: 0;
+  color: rgba(23, 32, 39, 0.62);
+  line-height: 1.7;
+}
+
+.fourteen-card__button {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 25px;
+  padding: 0;
+  border: 0;
+  color: var(--wine);
+  background: transparent;
+  font-size: 0.79rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.fourteen-card__button span {
+  display: grid;
+  place-items: center;
+}
+
+.fourteen-card__locked-copy {
+  position: relative;
+  z-index: 1;
+  margin: 24px 0 0;
+  color: rgba(23, 32, 39, 0.45);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.fourteen-card__reveal {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.fourteen-card__reveal-inner {
+  padding-top: 24px;
+}
+
+.fourteen-card__reveal-inner > p {
+  margin: 0;
+  padding-top: 22px;
+  border-top: 1px solid rgba(0, 48, 73, 0.09);
+  color: rgba(23, 32, 39, 0.72);
+  line-height: 1.85;
+}
+
+.fourteen-card__media-placeholder {
+  display: flex;
+  min-height: 150px;
+  margin-top: 20px;
+  padding: 22px;
+  border: 1px dashed rgba(0, 48, 73, 0.18);
+  border-radius: 18px;
+  color: rgba(0, 48, 73, 0.5);
+  background:
+    linear-gradient(135deg, rgba(102, 155, 188, 0.07), rgba(193, 18, 31, 0.035));
+  flex-direction: column;
+  justify-content: end;
+}
+
+.fourteen-card__media-placeholder span {
+  color: var(--navy);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+}
+
+.fourteen-card__media-placeholder small {
+  margin-top: 4px;
+}
+
+.fourteen-card__preview-badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 5px 10px;
+  border-radius: 0 0 10px 10px;
+  color: var(--cream);
+  background: var(--navy);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
+
+.fourteens__footer {
+  margin: 42px auto 0;
+  color: rgba(0, 48, 73, 0.48);
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1rem, 4vw, 1.35rem);
+  font-style: italic;
+  text-align: center;
+}
+
+@media (min-width: 760px) {
+  .fourteens__heading {
+    grid-template-columns: 1fr 0.85fr;
+  }
+
+  .fourteens__rail {
+    display: block;
+  }
+
+  .fourteens__grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0;
+  }
+
+  .fourteen-card {
+    min-height: 410px;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .fourteens__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .fourteen-card {
+    min-height: 470px;
+    padding: 28px 24px;
+  }
+
+  .fourteen-card h3 {
+    min-height: 102px;
+    font-size: 2.3rem;
+  }
+}

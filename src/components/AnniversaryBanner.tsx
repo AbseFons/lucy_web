@@ -3,9 +3,13 @@ import { Heart } from 'lucide-react'
 import { useAnniversary } from '../hooks/useAnniversary'
 
 export function AnniversaryBanner() {
-  const { isDay14, completedMonths } = useAnniversary()
+  const { isDay14, completedMonths, isRelationshipStart } = useAnniversary()
 
   if (!isDay14) return null
+
+  const message = isRelationshipStart
+    ? 'Aquí empezó Tú y yo'
+    : `Feliz ${completedMonths} ${completedMonths === 1 ? 'mes' : 'meses'} juntos`
 
   return (
     <motion.aside
@@ -16,9 +20,7 @@ export function AnniversaryBanner() {
       aria-live="polite"
     >
       <Heart size={16} fill="currentColor" />
-      <span>
-        Feliz 14 · {completedMonths} {completedMonths === 1 ? 'mes' : 'meses'} juntos
-      </span>
+      <span>{message}</span>
     </motion.aside>
   )
 }

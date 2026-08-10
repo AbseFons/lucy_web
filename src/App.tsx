@@ -8,6 +8,7 @@ import { RelationshipMoment } from './sections/RelationshipMoment/RelationshipMo
 import { RelationshipCounter } from './components/RelationshipCounter'
 import { AnniversaryBanner } from './components/AnniversaryBanner'
 import { SiteProgress } from './components/SiteProgress'
+import { OurFourteens } from './sections/OurFourteens/OurFourteens'
 
 function App() {
   const [started, setStarted] = useState(false)
@@ -41,14 +42,15 @@ function App() {
             <section className="section section--cream">
               <RelationshipCounter />
             </section>
+            <OurFourteens />
 
             <section className="section section--navy section--ending-placeholder">
               <div className="section__inner section__inner--center">
                 <p className="eyebrow eyebrow--light">Continuará</p>
                 <h2 className="display display--light">Esto recién empieza.</h2>
                 <p className="body-copy body-copy--light">
-                  Aquí iremos sumando nuestros 14, fotos, lugares, canciones,
-                  recuerdos, cartas y todo lo que todavía nos falta vivir.
+                  Aquí iremos sumando fotos, lugares, canciones, recuerdos, cartas y todo
+                  lo que todavía nos falta vivir.
                 </p>
               </div>
             </section>

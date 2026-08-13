@@ -97,3 +97,39 @@ location: 'Lima',
 ```
 
 No es obligatorio completar fecha o lugar.
+
+
+## v0.4 — Nuestro pequeño mapa
+
+Se añadió la sección **Nuestros lugares** con un mapa real e interactivo.
+
+### Incluye
+
+- Leaflet + React Leaflet.
+- Mapa oscuro integrado con la paleta del proyecto.
+- 4 lugares iniciales: Malecón de Barranco, Museo MAC, Residencial San Felipe y Mercado de Magdalena.
+- Pines personalizados, sin imágenes PNG externas.
+- Click en un pin para hacer `flyTo` y mostrar su ficha.
+- Lista alternativa de lugares para móvil y accesibilidad.
+- Enlace para abrir la ubicación seleccionada en Google Maps.
+- Espacio preparado para foto, fecha y recuerdo por lugar.
+- Sin domicilios privados.
+- Datos centralizados en `src/data/places.ts` para que agregar lugares nuevos sea sencillo.
+
+### Agregar un lugar
+
+Edita `src/data/places.ts` y añade:
+
+```ts
+{
+  id: 'nuevo-lugar',
+  name: 'Nombre del lugar',
+  shortName: 'Nombre corto',
+  district: 'Distrito',
+  coordinates: [-12.0000, -77.0000],
+  addressLabel: 'Referencia pública',
+  memory: 'El recuerdo que quieras mostrar.',
+}
+```
+
+Las coordenadas existentes son puntos públicos de referencia y pueden ajustarse cuando se defina el sitio exacto asociado a cada cita.

@@ -10,6 +10,7 @@ import { AnniversaryBanner } from './components/AnniversaryBanner'
 import { SiteProgress } from './components/SiteProgress'
 import { OurFourteens } from './sections/OurFourteens/OurFourteens'
 import { MemoriesGallery } from './sections/MemoriesGallery/MemoriesGallery'
+import { OurPlaces } from './sections/OurPlaces/OurPlaces'
 
 function App() {
   const [started, setStarted] = useState(false)
@@ -45,13 +46,14 @@ function App() {
             </section>
             <OurFourteens />
             <MemoriesGallery />
+            <OurPlaces />
 
             <section className="section section--navy section--ending-placeholder">
               <div className="section__inner section__inner--center">
                 <p className="eyebrow eyebrow--light">Continuará</p>
                 <h2 className="display display--light">Esto recién empieza.</h2>
                 <p className="body-copy body-copy--light">
-                  Aquí iremos sumando lugares, canciones, videos, recuerdos, cartas y todo
+                  Aquí iremos sumando canciones, videos, recuerdos, cartas y todo
                   lo que todavía nos falta vivir.
                 </p>
               </div>

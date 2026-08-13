@@ -27,10 +27,9 @@ export type GalleryItem = {
 export const galleryItems: GalleryItem[] = [
   {
     id: 'memory-01',
-    title: 'Conocimos a Tomás',
-    caption: 'Foto de ese día que nos hizo muy felices.',
+    title: 'Una de nuestras favoritas',
+    caption: 'Aquí irá una foto que merezca abrir la galería.',
     category: 'favoritas',
-    src: '/memories/tomas.jpeg',
     featured: true,
     portrait: false,
     handwritten: 'de esas que uno guarda ♡',
@@ -40,7 +39,6 @@ export const galleryItems: GalleryItem[] = [
     title: 'Una cita',
     caption: 'Un espacio para una foto y la historia breve de ese día.',
     category: 'citas',
-    src: '/memories/cita.jpeg',
     portrait: true,
   },
   {

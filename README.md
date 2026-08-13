@@ -133,3 +133,69 @@ Edita `src/data/places.ts` y añade:
 ```
 
 Las coordenadas existentes son puntos públicos de referencia y pueden ajustarse cuando se defina el sitio exacto asociado a cada cita.
+
+
+## v0.5 — Nuestra banda sonora
+
+Se añadió una sección musical completa y persistente:
+
+- Sección visual **Nuestra banda sonora**.
+- Diseño de disco/vinilo animado.
+- Lista de canciones seleccionable.
+- Reproductor real para archivos locales.
+- Play / pausa.
+- Canción anterior y siguiente.
+- Barra de progreso y búsqueda.
+- Control de volumen en escritorio.
+- Paso automático a la siguiente canción reproducible.
+- Mini reproductor flotante que permanece visible al seguir navegando.
+- Portadas opcionales.
+- Enlaces opcionales a Spotify y YouTube.
+- Soporte para una canción principal.
+- Opción preparada para iniciar la canción principal al pulsar **Entrar**.
+- Placeholders explícitos mientras todavía no se definan las canciones reales.
+
+### Añadir una canción real
+
+1. Copia el audio a:
+
+```text
+public/music/
+```
+
+2. Opcionalmente copia una portada cuadrada a la misma carpeta.
+
+3. Edita `src/data/songs.ts`:
+
+```ts
+{
+  id: 'song-01',
+  title: 'Título real',
+  artist: 'Artista',
+  note: 'Por qué esta canción es importante para ustedes.',
+  audioSrc: '/music/cancion-principal.mp3',
+  coverSrc: '/music/cancion-principal.webp',
+  spotifyUrl: '...',
+  youtubeUrl: '...',
+  featured: true,
+}
+```
+
+### Música desde la portada
+
+Cuando exista una canción principal válida, cambia:
+
+```ts
+playFeaturedOnEnter: false
+```
+
+por:
+
+```ts
+playFeaturedOnEnter: true
+```
+
+en `src/data/songs.ts`.
+
+La reproducción se intenta después del clic en **Entrar**, evitando depender de autoplay
+sin interacción del usuario.

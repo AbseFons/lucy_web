@@ -11,9 +11,22 @@ import { SiteProgress } from './components/SiteProgress'
 import { OurFourteens } from './sections/OurFourteens/OurFourteens'
 import { MemoriesGallery } from './sections/MemoriesGallery/MemoriesGallery'
 import { OurPlaces } from './sections/OurPlaces/OurPlaces'
+import { OurSoundtrack } from './sections/OurSoundtrack/OurSoundtrack'
+import { FloatingMusicPlayer } from './components/music/FloatingMusicPlayer'
+import { useMusicPlayer } from './context/MusicPlayerContext'
+import { featuredSongIndex, musicSettings, songs } from './data/songs'
 
 function App() {
   const [started, setStarted] = useState(false)
+  const { selectTrack } = useMusicPlayer()
+
+  const handleEnter = () => {
+    setStarted(true)
+
+    if (musicSettings.playFeaturedOnEnter && songs[featuredSongIndex]?.audioSrc) {
+      selectTrack(featuredSongIndex, true)
+    }
+  }
 
   return (
     <div className="app-shell">
@@ -26,7 +39,7 @@ function App() {
             exit={{ opacity: 0, scale: 1.02 }}
             transition={{ duration: 0.8 }}
           >
-            <Intro onEnter={() => setStarted(true)} />
+            <Intro onEnter={handleEnter} />
           </motion.div>
         ) : (
           <motion.main
@@ -37,6 +50,7 @@ function App() {
           >
             <SiteProgress />
             <AnniversaryBanner />
+            <FloatingMusicPlayer />
             <StoryIntro />
             <BeforeUs />
             <Reconnection />
@@ -47,14 +61,15 @@ function App() {
             <OurFourteens />
             <MemoriesGallery />
             <OurPlaces />
+            <OurSoundtrack />
 
             <section className="section section--navy section--ending-placeholder">
               <div className="section__inner section__inner--center">
                 <p className="eyebrow eyebrow--light">Continuará</p>
                 <h2 className="display display--light">Esto recién empieza.</h2>
                 <p className="body-copy body-copy--light">
-                  Aquí iremos sumando canciones, videos, recuerdos, cartas y todo
-                  lo que todavía nos falta vivir.
+                  Aquí iremos sumando videos, recuerdos, cartas y todo lo que todavía
+                  nos falta vivir.
                 </p>
               </div>
             </section>

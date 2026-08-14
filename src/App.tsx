@@ -12,6 +12,10 @@ import { OurFourteens } from './sections/OurFourteens/OurFourteens'
 import { MemoriesGallery } from './sections/MemoriesGallery/MemoriesGallery'
 import { OurPlaces } from './sections/OurPlaces/OurPlaces'
 import { OurSoundtrack } from './sections/OurSoundtrack/OurSoundtrack'
+import { MemoryJar } from './sections/MemoryJar/MemoryJar'
+import { ThingsILove } from './sections/ThingsILove/ThingsILove'
+import { FinalLetter } from './sections/FinalLetter/FinalLetter'
+import { Ending } from './sections/Ending/Ending'
 import { FloatingMusicPlayer } from './components/music/FloatingMusicPlayer'
 import { useMusicPlayer } from './context/MusicPlayerContext'
 import { featuredSongIndex, musicSettings, songs } from './data/songs'
@@ -62,17 +66,10 @@ function App() {
             <MemoriesGallery />
             <OurPlaces />
             <OurSoundtrack />
-
-            <section className="section section--navy section--ending-placeholder">
-              <div className="section__inner section__inner--center">
-                <p className="eyebrow eyebrow--light">Continuará</p>
-                <h2 className="display display--light">Esto recién empieza.</h2>
-                <p className="body-copy body-copy--light">
-                  Aquí iremos sumando videos, recuerdos, cartas y todo lo que todavía
-                  nos falta vivir.
-                </p>
-              </div>
-            </section>
+            <MemoryJar />
+            <ThingsILove />
+            <FinalLetter />
+            <Ending />
           </motion.main>
         )}
       </AnimatePresence>

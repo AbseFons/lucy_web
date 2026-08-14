@@ -396,3 +396,8 @@ src/data/ending.ts
 ```
 
 Puedes cambiar tanto el cierre visible como el mensaje del pequeño easter egg.
+
+
+## v0.9.1 — Contador ampliado
+
+La sección **El tiempo contigo** ahora muestra años, meses, días, horas, minutos y segundos. El contador se actualiza cada segundo. El diseño usa 2 columnas en móvil, 3 en tablet y 6 en escritorio.

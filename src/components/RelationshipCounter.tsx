@@ -5,10 +5,12 @@ export function RelationshipCounter() {
   const time = useRelationshipTime()
 
   const blocks = [
+    ['Años', time.years],
     ['Meses', time.months],
     ['Días', time.days],
     ['Horas', time.hours],
     ['Minutos', time.minutes],
+    ['Segundos', time.seconds],
   ] as const
 
   return (
@@ -25,7 +27,7 @@ export function RelationshipCounter() {
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ delay: index * 0.08 }}
+              transition={{ delay: index * 0.06 }}
             >
               <strong>{String(value).padStart(2, '0')}</strong>
               <span>{label}</span>

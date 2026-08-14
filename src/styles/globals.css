@@ -574,7 +574,7 @@ button {
   }
 
   .counter__grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .counter__card {
@@ -4184,5 +4184,12 @@ button.place-row:hover,
   .ending-content h2 {
     max-width: 980px;
     margin-inline: auto;
+  }
+}
+
+
+@media (min-width: 1100px) {
+  .counter__grid {
+    grid-template-columns: repeat(6, 1fr);
   }
 }

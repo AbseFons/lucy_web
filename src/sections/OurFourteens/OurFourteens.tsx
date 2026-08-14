@@ -107,7 +107,17 @@ export function OurFourteens() {
                       <div className="fourteen-card__reveal-inner">
                         <p>{anniversary.message}</p>
                         {anniversary.image ? (
-                          <img src={anniversary.image} alt="" />
+                          <img
+                            src={anniversary.image}
+                            alt=""
+                            style={{
+                              aspectRatio: '3 / 2',
+                              objectFit: 'cover',
+                              width: '100%',
+                              marginTop: '16px', /* Agrega el espacio superior e inferior */
+                              borderRadius: '12px' /* Redondea los bordes */
+                            }}
+                          />
                         ) : (
                           <div className="fourteen-card__media-placeholder">
                             <span>Foto o video de este 14</span>

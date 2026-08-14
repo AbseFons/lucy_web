@@ -109,6 +109,7 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Me dio mucha risa y me gustó saber que Morita es igual de cariñosa que tú.',
     category: 'favoritas',
     portrait: false,
+    src: '/memories/primera-foto-mora.jpeg',
     handwritten: 'estaremos como chicles los tres ♡',
   },
 ]

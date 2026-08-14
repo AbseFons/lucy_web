@@ -33,8 +33,8 @@ export function MemoriesGallery() {
           </div>
 
           <p className="gallery-heading__copy">
-            No quiero que esto termine siendo una carpeta de fotos. Cada imagen puede
-            guardar una fecha, un lugar o una frase que solo tenga sentido para nosotros.
+            Necesitamos documentar lo nuestro, la vida contigo es muy bonita. Aquí hay un espacio para guardar nuestros recuerdos.<br/>
+            Psdt. Mi amor, debemos tomarnos más fotos xd
           </p>
         </div>
 
@@ -99,14 +99,6 @@ export function MemoriesGallery() {
             </motion.button>
           ))}
         </motion.div>
-
-        <div className="gallery-note">
-          <span>20–50 fotos</span>
-          <p>
-            La estructura ya está pensada para crecer sin convertirse en una cuadrícula
-            interminable.
-          </p>
-        </div>
       </div>
 
       <GalleryLightbox

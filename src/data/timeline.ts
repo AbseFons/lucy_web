@@ -29,7 +29,7 @@ export const timeline: TimelineItem[] = [
     tone: 'quiet',
   },
   {
-    date: '2025-02',
+    date: '2025',
     title: 'Nos encontramos de nuevo',
     description:
       'Volvimos a hablar en febrero. Estuvimos cerca, pero la historia todavía guardaba una vuelta más.',

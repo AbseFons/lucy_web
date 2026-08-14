@@ -98,7 +98,7 @@ export const galleryItems: GalleryItem[] = [
   {
     id: 'memory-09',
     title: 'Nuestra primera salida oficial con Morita.',
-    caption: 'Celebrando con Morita a lado, me gusta mucho.',
+    caption: 'Celebrando con Morita a lado, la pasé bonito esa noche.',
     category: 'nosotros',
     portrait: true,
     src: '/memories/celebrando.jpeg',

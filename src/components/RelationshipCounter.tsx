@@ -36,7 +36,7 @@ export function RelationshipCounter() {
         </div>
 
         <p className="counter__days">
-          {time.totalDays} días desde que dejamos de ser un “casi”.
+          {time.totalDays} días desde que dejamos de ser un “casi”. Llenemos este contador hasta que se quede sin números.
         </p>
       </div>
     </div>

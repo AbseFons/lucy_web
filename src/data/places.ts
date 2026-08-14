@@ -20,12 +20,12 @@ export type MemoryPlace = {
 export const places: MemoryPlace[] = [
   {
     id: 'malecon-barranco',
-    name: 'Malecón de Barranco',
+    name: 'Caminata por Barranco',
     shortName: 'Barranco',
     district: 'Barranco',
     coordinates: [-12.145388, -77.024343],
     addressLabel: 'Malecón de los Ingleses · Barranco',
-    memory: 'Aquí podemos guardar la fecha, una foto y la historia de ese paseo.',
+    memory: 'Aquí caminamos, conversamos, nos conocimos más. Hablamos de nuestro presente y futuro, en tan solo el segundo día ya estuve muy enamorado de ti.',
     featured: true,
   },
   {
@@ -35,7 +35,7 @@ export const places: MemoryPlace[] = [
     district: 'Barranco',
     coordinates: [-12.13703, -77.02283],
     addressLabel: 'Av. Grau 1511 · Barranco',
-    memory: 'Un espacio para contar qué recuerdan de esa visita y qué foto pertenece a ese día.',
+    memory: 'Fue bonito ver cada pintura o escultura, tratar de darle un significado y puntuarlo según nuestros gustos. Fue gracioso y bonito xd',
   },
   {
     id: 'residencial-san-felipe',
@@ -44,7 +44,7 @@ export const places: MemoryPlace[] = [
     district: 'Jesús María',
     coordinates: [-12.087657, -77.053225],
     addressLabel: 'Residencial San Felipe · Jesús María',
-    memory: 'Aquí puede ir el pequeño recuerdo que convirtió este lugar en uno de los suyos.',
+    memory: 'Una de mis citas favoritas! Tú y yo, caminando de la mano, hablando de todo y de nada, y disfrutando de la compañía del otro. Fue un momento muy feliz para mí.',
   },
   {
     id: 'mercado-magdalena',
@@ -53,6 +53,6 @@ export const places: MemoryPlace[] = [
     district: 'Magdalena del Mar',
     coordinates: [-12.09119, -77.074043],
     addressLabel: 'Jr. Bolognesi · Magdalena del Mar',
-    memory: 'Podremos acompañar este punto con una foto, algo que comieron o una anécdota de la cita.',
+    memory: 'Caminamos mientras comíamos helado, fue bonito y el helado se acabó rápido. Faltó tomar fotos, mi amor. Desde ahora es obligatorio tomar fotos.',
   },
 ]

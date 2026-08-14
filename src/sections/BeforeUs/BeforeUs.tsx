@@ -39,7 +39,7 @@ export function BeforeUs() {
             viewport={{ once: true, amount: 0.7 }}
             transition={{ duration: 1.1, ease: 'easeOut' }}
           >
-            <span>A</span>
+            <span>Lucy</span>
           </motion.div>
           <motion.div
             className="desk desk--right"
@@ -48,7 +48,7 @@ export function BeforeUs() {
             viewport={{ once: true, amount: 0.7 }}
             transition={{ duration: 1.1, ease: 'easeOut' }}
           >
-            <span>L</span>
+            <span>Absé</span>
           </motion.div>
         </div>
       </div>

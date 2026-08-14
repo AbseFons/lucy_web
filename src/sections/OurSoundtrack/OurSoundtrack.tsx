@@ -32,9 +32,7 @@ export function OurSoundtrack() {
           </div>
 
           <p className="soundtrack-heading__copy">
-            Algunas canciones terminan guardando una conversación, una cita o una etapa
-            completa. Aquí podremos dejar no solo qué escuchábamos, sino por qué cada una
-            terminó formando parte de nosotros.
+            Todas y cada una de estas canciones nos describen, nos recuerdan y nos acompañan. Algunas son nuestras favoritas, otras nos traen recuerdos de momentos que compartimos. Todas son parte de nuestra historia.
           </p>
         </header>
 
@@ -173,14 +171,6 @@ export function OurSoundtrack() {
               )
             })}
           </div>
-        </div>
-
-        <div className="soundtrack-footer">
-          <span>Preparado para crecer</span>
-          <p>
-            Puedes usar archivos locales para una reproducción continua y, al mismo
-            tiempo, guardar enlaces externos a Spotify o YouTube para cada canción.
-          </p>
         </div>
       </div>
     </section>

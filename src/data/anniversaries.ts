@@ -28,7 +28,7 @@ export const anniversaries: Anniversary[] = [
     monthNumber: 1,
     eyebrow: '14 de junio de 2026',
     title: 'Nuestro primer mes.',
-    image: '/memories/carta.webp',
+    image: '/memories/portada.webp',
     shortText: 'Treinta y un días siendo tú y yo.',
     message:
       'Amé mucho tu carta. Me hizo sentir que todo lo que hemos vivido hasta ahora ha valido la pena y que lo que nos espera es aún mejor. Gracias por ser tú, por elegirme y por hacerme sentir tan especial cada día.',

@@ -78,11 +78,6 @@ export function MemoryJar() {
                 : `${unseenCount} ${unseenCount === 1 ? 'papelito espera' : 'papelitos esperan'}.`}
             </h3>
 
-            <p className="memory-jar-panel__text">
-              No se repetirá ninguno hasta que hayas abierto todos. La página recuerda
-              cuáles descubriste incluso si vuelves otro día.
-            </p>
-
             <div className="memory-jar-progress">
               <div className="memory-jar-progress__top">
                 <span>Descubiertos</span>
@@ -147,15 +142,6 @@ export function MemoryJar() {
             </div>
           </div>
         </div>
-
-        <footer className="memory-jar-footer">
-          <span>Se puede seguir llenando</span>
-          <p>
-            Cada papelito vive en un archivo de datos separado. Más adelante podremos
-            añadir fotografías, audios o recuerdos desde una base de datos sin cambiar
-            esta interacción.
-          </p>
-        </footer>
       </div>
 
       <MemoryPaper item={currentItem} onClose={close} />

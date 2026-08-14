@@ -28,42 +28,26 @@ export const memoryJarItems: MemoryJarItem[] = [
   {
     id: 'jar-2016-pupitres',
     kind: 'recuerdo',
-    title: 'Mucho antes de “nosotros”',
+    title: 'Apoyaste tu cabeza en mi hombro',
     text:
-      'En 2016 estábamos en quinto de secundaria y nos sentamos juntos durante casi todo el año. Lo curioso es que nos gustábamos sin terminar de saberlo.',
+      'Fue uno de los momentos que más recuerdo de 2016. Estábamos en el salón de quinto de secundaria, y me sentí muy feliz de que apoyaras tu cabeza en mi hombro mientras hablábamos.',
     date: '2016',
     handwritten: 'Qué paciencia tuvo nuestra historia.',
   },
   {
-    id: 'jar-2017',
-    kind: 'casi',
-    title: 'Primer “casi”',
-    text:
-      'En 2017 volvimos a hablar. La historia intentó avanzar, aunque todavía no consiguió convertirse en nosotros.',
-    date: '2017',
-  },
-  {
     id: 'jar-2018',
     kind: 'casi',
-    title: 'Otra vuelta',
+    title: 'Teléfono malogrado',
     text:
-      'En 2018 volvimos a encontrarnos. Seguía existiendo algo entre los dos, pero todavía no era el momento.',
+      'En 2018 volvimos a encontrarnos. Fue el momento donde más cerca estuvimos de empezar nuestra historia, pero todavía no fue posible (por Maraboto).',
     date: '2018',
-  },
-  {
-    id: 'jar-2025',
-    kind: 'casi',
-    title: 'Casi, otra vez',
-    text:
-      'En febrero de 2025 volvimos a hablar. Estuvimos cerca, pero nuestra historia todavía se guardó una vuelta más.',
-    date: 'Febrero de 2025',
   },
   {
     id: 'jar-2603',
     kind: 'fecha',
     title: 'Esta vez sí',
     text:
-      'El 26 de marzo de 2026 volvimos a hablar. Esta vez la conversación no se quedó en otro intento.',
+      'El 26 de marzo de 2026 volvimos a hablar. Yo siempre te iba a contestar, mi amor',
     date: '26 · 03 · 2026',
     handwritten: 'Aquí empezó a cambiar todo.',
   },
@@ -72,51 +56,30 @@ export const memoryJarItems: MemoryJarItem[] = [
     kind: 'fecha',
     title: 'Nosotros',
     text:
-      'Después de tantos años, encuentros y “casi”, el 14 de mayo de 2026 finalmente empezó nuestra relación.',
+      'Te vi después de 8 años. Estabas tan hermosa como siempre. Y yo estaba tan feliz de verte y abrazarte. Ese día me di cuenta de que no podía dejarte ir.',
     date: '14 · 05 · 2026',
     handwritten: 'Por fin.',
   },
   {
     id: 'jar-personal-01',
     kind: 'detalle',
-    title: 'Por completar · Una de esas pequeñas cosas',
+    title: 'Besos',
     text:
-      'Escribe aquí un detalle cotidiano de Lucy que te guste especialmente: una expresión, una costumbre, algo que haga cuando está feliz o cualquier cosa que solo tú notes.',
+      'Besarte por primera vez fue un momento que nunca olvidaré. Fue espontáneo, lindo, mágico y me hizo sentir que todo era perfecto.',
   },
   {
     id: 'jar-personal-02',
     kind: 'recuerdo',
-    title: 'Por completar · Una cita que repetiría',
+    title: 'Gustos contrarios?',
     text:
-      'Cuenta aquí una cita concreta: dónde estuvieron, qué pasó y cuál es ese detalle que hace que quieras volver a vivirla.',
+      'Es gracioso que tengamos gustos tan diferentes en muchas cosas xd pero eso no nos impide disfrutar de lo que nos gusta a cada uno.',
   },
   {
     id: 'jar-personal-03',
     kind: 'para-ti',
-    title: 'Por completar · Algo que nunca te dije así',
+    title: 'Algo que nunca te dije así',
     text:
-      'Este papelito puede contener una frase breve que quieras decirle y que no necesite una fecha ni una fotografía.',
-  },
-  {
-    id: 'jar-personal-04',
-    kind: 'detalle',
-    title: 'Por completar · Algo que me hace reír',
-    text:
-      'Añade una anécdota divertida, una frase interna o un momento absurdo que ambos recuerden.',
-  },
-  {
-    id: 'jar-personal-05',
-    kind: 'recuerdo',
-    title: 'Por completar · Lima',
-    text:
-      'Elige uno de sus lugares importantes —Barranco, MAC, San Felipe, Magdalena u otro— y guarda aquí una escena concreta que haya ocurrido allí.',
-  },
-  {
-    id: 'jar-personal-06',
-    kind: 'para-ti',
-    title: 'Por completar · Para un día cualquiera',
-    text:
-      'Un mensaje que Lucy pueda sacar del tarro cualquier día y que siga teniendo sentido sin importar cuándo lo lea.',
+      'Cada vez que revisaba tus redes o te stalkeaba, tenía la esperanza de ver algo tuyo, una foto, un comentario, un video. A veces solo quería ver para sentirme cerca de ti, y otras veces para saber cómo estabas y qué hacías. Nunca te lo dije, pero me hacía feliz.',
   },
 ]
 

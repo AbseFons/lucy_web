@@ -28,8 +28,7 @@ export function ThingsILove() {
           </div>
 
           <p className="things-i-love-heading__copy">
-            No quiero que aparezcan todas de golpe. Algunas cosas merecen abrirse con
-            calma, una por una, como pequeñas cartas escondidas dentro de la página.
+            Te amo, mi vida! Y quiero que sepas que cada día me enamoro más de ti. Aunque las razones para amartes son infinitas, he preparado doce sobres para ti. Cada uno tiene un mensaje especial. Espero que los disfrutes tanto como yo disfruté prepararlos para ti.
           </p>
         </header>
 
@@ -83,7 +82,7 @@ export function ThingsILove() {
           })}
         </div>
 
-        <div className="things-i-love-note">
+        {/**<div className="things-i-love-note">
           <span>
             <LockKeyhole size={14} />
             Un sobre especial
@@ -92,7 +91,7 @@ export function ThingsILove() {
             El número 12 queda reservado para el 14 de agosto. En desarrollo se muestra
             desbloqueado para que puedas diseñarlo antes de regalar la página.
           </p>
-        </div>
+        </div>*/}
       </div>
 
       <LoveNoteLetter note={activeNote} onClose={closeNote} />

@@ -8,7 +8,7 @@ export const ending = {
   years: '2016 — ∞',
   secret: {
     triggerLabel: 'Un último detalle',
-    message: 'Sabía que ibas a tocar esto.',
+    message: 'Estoy muy enamorado de ti, mi amor!',
     submessage: 'Todavía nos quedan demasiadas cosas por vivir.',
   },
 } as const

@@ -26,8 +26,7 @@ export function OurPlaces() {
           </div>
 
           <p className="places-heading__copy">
-            Lima también puede contar una historia. Cada punto guarda un paseo, una cita o
-            una de esas pequeñas cosas que hacen que un lugar deje de ser solamente un lugar.
+            Quise crear un mapa con los lugares que más significan para nosotros. Espero que pronto llenemos el mapa de puntos rojos, y que cada uno tenga su fecha, su foto y su historia. Por ahora, estos son los que ya tienen un recuerdo.
           </p>
         </header>
 
@@ -55,10 +54,10 @@ export function OurPlaces() {
                 <span className="place-feature__compass">✦</span>
                 <p className="eyebrow">Explora el mapa</p>
                 <h3>Un lugar, un recuerdo.</h3>
-                <p className="place-feature__memory">
+                {/**<p className="place-feature__memory">
                   Elige cualquiera de los puntos. Más adelante podremos completar cada uno
                   con la fecha real, una foto y la historia de esa cita.
-                </p>
+                </p>*/}
               </div>
             )}
 
@@ -90,7 +89,7 @@ export function OurPlaces() {
 
                 <p className="place-feature__memory">{activePlace.memory}</p>
 
-                {activePlace.photo ? (
+                {/* {activePlace.photo ? (
                   <img
                     className="place-feature__photo"
                     src={activePlace.photo}
@@ -102,7 +101,7 @@ export function OurPlaces() {
                     <span>Foto del lugar / cita</span>
                     <small>opcional</small>
                   </div>
-                )}
+                )}*/}
 
                 <a
                   className="place-feature__link"
@@ -140,7 +139,7 @@ export function OurPlaces() {
             )
           })}
 
-          <div className="place-row place-row--future">
+          {/**<div className="place-row place-row--future">
             <span className="place-row__number">
               <Plus size={16} />
             </span>
@@ -148,7 +147,7 @@ export function OurPlaces() {
               <strong>Los que todavía faltan</strong>
               <small>La estructura ya está lista para seguir creciendo.</small>
             </span>
-          </div>
+          </div>*/}
         </div>
       </div>
     </section>
